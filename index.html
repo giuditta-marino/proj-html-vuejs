@@ -3,97 +3,106 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/master.css">
     <title>MaxCoach</title>
   </head>
   <body>
-    <!-- HEADER -->
-    <header>
-      <div class="container">
-        <!-- HEADER-TOP -->
-        <div class="header-top">
-          <nav>
-            <!-- LOGO -->
-            <img src="" alt="logo-maxcoach">
 
-            <!-- MENU-NAVIGATION -->
-            <div class="menu-navigation">
-              <ul>
-                <!-- GENERO TANTI LI QUANTE SONO LE SECTION (OGGETTI) NELL'ARRAY
-                OGNI SECTION AVRA' UN TITOLO E UN LINK -->
-                <li>
-                  <a href="#"></a>
-                </li>
+    <div id="root">
+      <!-- HEADER -->
+      <header>
+        <div class="container">
+          <!-- HEADER-TOP -->
+          <div class="header-top row">
+            <nav>
+              <!-- LOGO -->
+              <div class="logo col-lg-3"><img src="./assets/img/dark-logo.png" alt="logo-maxcoach"></div>
+
+              <!-- MENU-NAVIGATION -->
+              <div class="menu-navigation col-lg-6">
+                <ul class="no-style">
+                  <!-- GENERO TANTI LI QUANTE SONO LE SECTION (OGGETTI) NELL'ARRAY
+                  OGNI SECTION AVRA' UN TITOLO E UN LINK -->
+                  <li v-for="menu in menuNavigation">
+                    <a :href="menu.link">{{menu.name}}</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+
+            <!-- SOCIAL-LINKS -->
+            <div class="social-links col-lg-3">
+              <ul class="no-style">
+                <li><a href="#"><i></i></a></li>
               </ul>
             </div>
-          </nav>
+          </div>
 
-          <!-- SOCIAL-LINKS -->
-          <div class="social-links">
-            <ul>
-              <li><a href="#"><i></i></a></li>
-            </ul>
+          <!-- JUMBO -->
+          <div class="jumbo">
+            <div class="peace-on-earth">
+              <img src="" alt="">
+              <h1></h1>
+              <p></p>
+              <button type="button" name="button"></button>
+            </div>
           </div>
         </div>
+      </header>
 
-        <!-- JUMBO -->
-        <div class="jumbo">
-          <div class="peace-on-earth">
-            <img src="" alt="">
-            <h1></h1>
-            <p></p>
-            <button type="button" name="button"></button>
-          </div>
+      <!-- MAIN -->
+      <main>
+        <div class="container">
+
+          <!-- FIRST SECTION -->
+          <section>
+            <!-- GOALS-NUMBERS -->
+            <div class="row"></div>
+
+
+            <!-- ABOUT ME -->
+            <div class="row"></div>
+            <div class="row"></div>
+
+            <!-- LATEST-COURSES -->
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+
+            <!-- BOOK-STORE -->
+            <div class="row"></div>
+
+            <!-- LOGOS -->
+            <div class="row logos"></div>
+          </section>
+
+          <!-- SECOND SECTION -->
+          <div class="row"></div>
+
+          <!-- BLOG UPDATED -->
+          <div class="row"></div>
+          <div class="row"></div>
+          <div class="row"></div>
+
         </div>
-      </div>
-    </header>
+      </main>
 
-    <!-- MAIN -->
-    <main>
-      <div class="container">
-
-        <!-- FIRST SECTION -->
-        <section>
-          <!-- GOALS-NUMBERS -->
-          <div class="row"></div>
-
-
-          <!-- ABOUT ME -->
-          <div class="row"></div>
-          <div class="row"></div>
-
-          <!-- LATEST-COURSES -->
-          <div class="row"></div>
-          <div class="row"></div>
-          <div class="row"></div>
-          <div class="row"></div>
-
-          <!-- BOOK-STORE -->
-          <div class="row"></div>
-
-          <!-- LOGOS -->
-          <div class="row logos"></div>
-        </section>
-
-        <!-- SECOND SECTION -->
-        <div class="row"></div>
-
-        <!-- BLOG UPDATED -->
-        <div class="row"></div>
+      <!-- FOOTER -->
+      <footer>
         <div class="row"></div>
         <div class="row"></div>
 
-      </div>
-    </main>
+      </footer>
+    </div>
 
-    <!-- FOOTER -->
-    <footer>
-      <div class="row"></div>
-      <div class="row"></div>
 
-    </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="./assets/js/main.js" charset="utf-8"></script>
 
   </body>
 </html>

@@ -1,0 +1,22 @@
+nav{
+  @include flex-align-center;
+
+  .logo{
+
+    img{
+    height: 43px;
+    }
+
+  }
+
+  .menu-navigation{
+    ul{
+      @include flex-align-center;
+      a{
+        font-size: 1.1em;
+        font-weight: 500;
+      }
+    }
+  }
+
+}

@@ -3,3 +3,27 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: "Khula", sans-serif;
+}
+
+ul.no-style {
+  list-style: none;
+}
+
+.header-top nav {
+  display: flex;
+  align-items: center;
+}
+.header-top nav .logo img {
+  height: 43px;
+}
+.header-top nav .menu-navigation ul {
+  display: flex;
+  align-items: center;
+}
+.header-top nav .menu-navigation ul a {
+  font-size: 1.1em;
+  font-weight: 500;
+}
