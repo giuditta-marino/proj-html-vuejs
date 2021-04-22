@@ -34,25 +34,25 @@ var app = new Vue({
       iconName: 'twitter',
       iconPrefix: 'fa-',
       iconFamily: 'fab',
-      link: ''
+      link: 'https://twitter.com/'
     }, {
       name: 'Facebook',
       iconName: 'facebook-f',
       iconPrefix: 'fa-',
       iconFamily: 'fab',
-      link: ''
+      link: 'https://www.facebook.com/'
     }, {
       name: 'Instagram',
       iconName: 'instagram',
       iconPrefix: 'fa-',
       iconFamily: 'fab',
-      link: ''
+      link: 'https://www.instagram.com/'
     }, {
       name: 'Linkedin',
       iconName: 'linkedin',
       iconPrefix: 'fa-',
       iconFamily: 'fab',
-      link: ''
+      link: 'https://it.linkedin.com/'
     }]
   },
   mounted: function mounted() {},

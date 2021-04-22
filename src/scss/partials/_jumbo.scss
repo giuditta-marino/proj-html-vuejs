@@ -1,8 +1,8 @@
 .jumbo{
   .peace-on-earth{
-    padding-right: 100px;
+    padding-right: 114px;
     p{
-      font-size: 0.8em;
+      font-size: 1em;
     }
 
     p#wingman{
@@ -12,11 +12,14 @@
     }
 
     h1{
-      line-height: 50px;
+      font-size: 3.3em;
+      line-height: 78px;
     }
 
     p.subtitle{
+      font-size: 1.2em;
       color: $color5;
+      line-height: 29px;
     }
 
     button{
@@ -24,11 +27,28 @@
       i{
         padding-left: 5px;
       }
-      
+
+    }
+  }
+
+  .image{
+    padding-left: 20px;
+    position: relative;
+
+    img.motivation{
+      position: absolute;
+      z-index: 1;
+      height: 612px;
     }
 
-
-
+    img.shape{
+      position: absolute;
+      left: 26px;
+      z-index: 0;
+      top: 43%;
+      height: 507px;
+    }
   }
+
 
 }

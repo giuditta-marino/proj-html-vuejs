@@ -24,7 +24,7 @@
           <div class="header-top pt-30">
             <nav class="row">
               <!-- LOGO -->
-              <div class="logo col-lg-3"><img src="./assets/img/dark-logo.png" alt="logo-maxcoach"></div>
+              <div class="logo col-lg-3"><img src="./assets/img/dark-logo.png" alt="maxcoach-logo"></div>
 
               <!-- MENU-NAVIGATION -->
               <div class="menu-navigation col-lg-6">
@@ -40,24 +40,24 @@
               <!-- SOCIAL-LINKS -->
               <div class="social-links col-lg-3">
                 <ul class="no-style">
-                  <li v-for= "social in socials"><a href="#"><i :class="social.iconFamily + ' ' + social.iconPrefix + social.iconName"></i></a></li>
+                  <li v-for= "social in socials"><a :href="social.link"><i :class="social.iconFamily + ' ' + social.iconPrefix + social.iconName"></i></a></li>
                 </ul>
               </div>
             </nav>
           </div>
 
           <!-- JUMBO -->
-          <div class="jumbo pt-80 pb-80">
-            <div class="peace-on-earth row">
-              <div class="col-lg-6">
+          <div class="jumbo">
+            <div class="row">
+              <div class="peace-on-earth col-lg-6 pt-90 pb-120">
                 <p id="wingman">I'm wingman</p>
                 <h1>Peace On Earth A Wonderful Wish But No Way</h1>
                 <p class="subtitle pt-10 pb-10">Success isn't overnight. It's when everyday you get a little better than the day before. It all adds up.</p>
                 <button type="button" name="button">Get Started For Free <i class="fas fa-arrow-right"></i></button>
               </div>
-              <div class="col-lg-6">
-                <img src="./assets/img/home-motivation-hero-image.png" alt="">
-                <img src="./assets/img/home-motivation-shape-face.png" alt="">
+              <div class="image col-lg-6 pt-50">
+                <img class="motivation" src="./assets/img/motivation.png" alt="man-portrait">
+                <img class="shape" src="./assets/img/motivation_face.png" alt="face-shape-illustration">
               </div>
 
             </div>

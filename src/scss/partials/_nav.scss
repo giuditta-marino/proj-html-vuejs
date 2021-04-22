@@ -10,13 +10,16 @@ nav{
 
   .menu-navigation{
 
+    padding-left: 36px;
+    padding-right: 36px;
+
     ul{
       @include flex-align-center;
       justify-content: space-between;
 
       a{
         color: $color10;
-        font-size: 0.9em;
+        font-size: 0.8em;
         font-weight: 500;
 
         i{
@@ -33,7 +36,7 @@ nav{
 
       li{
         font-size: 1em;
-        padding-left: 17px;
+        padding-left: 20px;
 
         a{
           color: $color10;

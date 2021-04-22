@@ -78,6 +78,46 @@
   padding-top: 100px;
 }
 
+.pt-105 {
+  padding-top: 105px;
+}
+
+.pt-110 {
+  padding-top: 110px;
+}
+
+.pt-115 {
+  padding-top: 115px;
+}
+
+.pt-120 {
+  padding-top: 120px;
+}
+
+.pt-125 {
+  padding-top: 125px;
+}
+
+.pt-130 {
+  padding-top: 130px;
+}
+
+.pt-135 {
+  padding-top: 135px;
+}
+
+.pt-140 {
+  padding-top: 140px;
+}
+
+.pt-145 {
+  padding-top: 145px;
+}
+
+.pt-150 {
+  padding-top: 150px;
+}
+
 .pb-5 {
   padding-bottom: 5px;
 }
@@ -158,10 +198,54 @@
   padding-bottom: 100px;
 }
 
+.pb-105 {
+  padding-bottom: 105px;
+}
+
+.pb-110 {
+  padding-bottom: 110px;
+}
+
+.pb-115 {
+  padding-bottom: 115px;
+}
+
+.pb-120 {
+  padding-bottom: 120px;
+}
+
+.pb-125 {
+  padding-bottom: 125px;
+}
+
+.pb-130 {
+  padding-bottom: 130px;
+}
+
+.pb-135 {
+  padding-bottom: 135px;
+}
+
+.pb-140 {
+  padding-bottom: 140px;
+}
+
+.pb-145 {
+  padding-bottom: 145px;
+}
+
+.pb-150 {
+  padding-bottom: 150px;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.container {
+  max-width: 1100px;
 }
 
 body {
@@ -180,8 +264,8 @@ button {
   background-color: #20ac97;
   color: #ffffff;
   border-radius: 4px;
-  padding: 11px 32px;
-  font-size: 0.5em;
+  padding: 15px 44px;
+  font-size: 0.7em;
   font-weight: bold;
   border: 0;
 }
@@ -193,6 +277,10 @@ header {
 header .header-top nav .logo img {
   height: 20px;
 }
+header .header-top nav .menu-navigation {
+  padding-left: 36px;
+  padding-right: 36px;
+}
 header .header-top nav .menu-navigation ul {
   display: flex;
   align-items: center;
@@ -200,7 +288,7 @@ header .header-top nav .menu-navigation ul {
 }
 header .header-top nav .menu-navigation ul a {
   color: #3f3a64;
-  font-size: 0.9em;
+  font-size: 0.8em;
   font-weight: 500;
 }
 header .header-top nav .menu-navigation ul a i {
@@ -213,16 +301,16 @@ header .header-top nav .social-links ul {
 }
 header .header-top nav .social-links ul li {
   font-size: 1em;
-  padding-left: 17px;
+  padding-left: 20px;
 }
 header .header-top nav .social-links ul li a {
   color: #3f3a64;
 }
 header .jumbo .peace-on-earth {
-  padding-right: 100px;
+  padding-right: 114px;
 }
 header .jumbo .peace-on-earth p {
-  font-size: 0.8em;
+  font-size: 1em;
 }
 header .jumbo .peace-on-earth p#wingman {
   text-transform: uppercase;
@@ -230,11 +318,30 @@ header .jumbo .peace-on-earth p#wingman {
   color: #171520;
 }
 header .jumbo .peace-on-earth h1 {
-  line-height: 50px;
+  font-size: 3.3em;
+  line-height: 78px;
 }
 header .jumbo .peace-on-earth p.subtitle {
+  font-size: 1.2em;
   color: #6b6c6c;
+  line-height: 29px;
 }
 header .jumbo .peace-on-earth button i {
   padding-left: 5px;
+}
+header .jumbo .image {
+  padding-left: 20px;
+  position: relative;
+}
+header .jumbo .image img.motivation {
+  position: absolute;
+  z-index: 1;
+  height: 612px;
+}
+header .jumbo .image img.shape {
+  position: absolute;
+  left: 26px;
+  z-index: 0;
+  top: 43%;
+  height: 507px;
 }
