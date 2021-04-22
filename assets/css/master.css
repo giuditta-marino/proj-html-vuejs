@@ -262,7 +262,7 @@ body {
   font-family: "Khula", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, blockquote {
   font-family: "Old Standard TT", serif;
 }
 
@@ -322,7 +322,7 @@ header .jumbo .peace-on-earth {
 header .jumbo .peace-on-earth p {
   font-size: 1em;
 }
-header .jumbo .peace-on-earth p#wingman {
+header .jumbo .peace-on-earth p.wingman {
   text-transform: uppercase;
   font-weight: 600;
   color: #171520;
@@ -385,5 +385,38 @@ main .alpha-male .description p:first-child {
 }
 main .alpha-male .description p:last-child {
   font-size: 0.9em;
+  color: #6b6c6c;
+}
+main .alpha-video .video-preview {
+  position: relative;
+}
+main .alpha-video .video-preview img.preview {
+  width: 100%;
+}
+main .alpha-video .video-preview img.play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+main .alpha-video .video-quote {
+  padding-left: 65px;
+  padding-right: 65px;
+}
+main .alpha-video .video-quote blockquote {
+  font-size: 1.5em;
+  line-height: 42px;
+  padding-top: 44px;
+  padding-bottom: 36px;
+}
+main .alpha-video .video-quote p.author {
+  font-size: 1.5em;
+  font-weight: 600;
+  padding-top: 20px;
+  margin-bottom: 0;
+}
+main .alpha-video .video-quote p.wingman {
+  padding-top: 5px;
+  text-transform: uppercase;
   color: #6b6c6c;
 }

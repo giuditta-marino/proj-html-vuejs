@@ -34,3 +34,46 @@
     }
   }
 }
+
+.alpha-video{
+  .video-preview{
+    position: relative;
+
+    img.preview{
+      width: 100%;
+    }
+
+    img.play{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .video-quote{
+    padding-left: 65px;
+    padding-right: 65px;
+
+    blockquote{
+      font-size: 1.5em;
+      line-height: 42px;
+      padding-top: 44px;
+      padding-bottom: 36px;
+    }
+
+    p.author{
+      font-size: 1.5em;
+      font-weight: 600;
+      padding-top: 20px;
+      margin-bottom: 0;
+    }
+
+    p.wingman{
+      padding-top: 5px;
+      text-transform: uppercase;
+      color: $color5;
+    }
+  }
+
+}
