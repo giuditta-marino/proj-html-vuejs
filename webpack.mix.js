@@ -1,5 +1,6 @@
 let mix = require ('laravel-mix');
 
-mix.sass('src/master.scss', 'assets/css/').options({
+mix.js('src/js/main.js', 'assets/js/');
+mix.sass('src/scss/master.scss', 'assets/css/').options({
     processCssUrls: false
 });

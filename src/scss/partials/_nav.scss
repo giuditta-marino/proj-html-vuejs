@@ -1,0 +1,46 @@
+nav{
+
+  .logo{
+
+    img{
+    height: 20px;
+    }
+
+  }
+
+  .menu-navigation{
+
+    ul{
+      @include flex-align-center;
+      justify-content: space-between;
+
+      a{
+        color: $color10;
+        font-size: 0.9em;
+        font-weight: 500;
+
+        i{
+          font-size: 0.7em;
+        }
+      }
+    }
+  }
+
+  .social-links{
+    ul{
+      @include flex-align-center;
+      justify-content: flex-end;
+
+      li{
+        font-size: 1em;
+        padding-left: 17px;
+
+        a{
+          color: $color10;
+        }
+      }
+    }
+
+  }
+
+}

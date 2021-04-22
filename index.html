@@ -3,9 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
+
     <link href="https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/master.css">
     <title>MaxCoach</title>
   </head>
@@ -16,8 +21,8 @@
       <header>
         <div class="container">
           <!-- HEADER-TOP -->
-          <div class="header-top row">
-            <nav>
+          <div class="header-top pt-30">
+            <nav class="row">
               <!-- LOGO -->
               <div class="logo col-lg-3"><img src="./assets/img/dark-logo.png" alt="logo-maxcoach"></div>
 
@@ -27,27 +32,34 @@
                   <!-- GENERO TANTI LI QUANTE SONO LE SECTION (OGGETTI) NELL'ARRAY
                   OGNI SECTION AVRA' UN TITOLO E UN LINK -->
                   <li v-for="menu in menuNavigation">
-                    <a :href="menu.link">{{menu.name}}</a>
+                    <a :href="menu.link">{{menu.name}} <i class="fas fa-angle-down"></i></a>
                   </li>
                 </ul>
               </div>
-            </nav>
 
-            <!-- SOCIAL-LINKS -->
-            <div class="social-links col-lg-3">
-              <ul class="no-style">
-                <li><a href="#"><i></i></a></li>
-              </ul>
-            </div>
+              <!-- SOCIAL-LINKS -->
+              <div class="social-links col-lg-3">
+                <ul class="no-style">
+                  <li v-for= "social in socials"><a href="#"><i :class="social.iconFamily + ' ' + social.iconPrefix + social.iconName"></i></a></li>
+                </ul>
+              </div>
+            </nav>
           </div>
 
           <!-- JUMBO -->
-          <div class="jumbo">
-            <div class="peace-on-earth">
-              <img src="" alt="">
-              <h1></h1>
-              <p></p>
-              <button type="button" name="button"></button>
+          <div class="jumbo pt-80 pb-80">
+            <div class="peace-on-earth row">
+              <div class="col-lg-6">
+                <p id="wingman">I'm wingman</p>
+                <h1>Peace On Earth A Wonderful Wish But No Way</h1>
+                <p class="subtitle pt-10 pb-10">Success isn't overnight. It's when everyday you get a little better than the day before. It all adds up.</p>
+                <button type="button" name="button">Get Started For Free <i class="fas fa-arrow-right"></i></button>
+              </div>
+              <div class="col-lg-6">
+                <img src="./assets/img/home-motivation-hero-image.png" alt="">
+                <img src="./assets/img/home-motivation-shape-face.png" alt="">
+              </div>
+
             </div>
           </div>
         </div>
