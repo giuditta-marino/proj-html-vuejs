@@ -10,3 +10,13 @@ $padding-directions: pt, pb;
     }
   }
 }
+
+.green-text{
+  color: $color4;
+}
+
+.green-title{
+  text-transform: uppercase;
+  color: $color4;
+  font-size: 0.7em;
+}

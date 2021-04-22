@@ -1,0 +1,8 @@
+main{
+  background-color: $color1;
+  z-index: 1;
+  position: relative;
+  @import "./_section_first.scss";
+  @import "./_section_second.scss";
+  @import "./_section_third.scss";
+}
