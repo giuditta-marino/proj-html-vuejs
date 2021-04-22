@@ -392,6 +392,7 @@ main .alpha-video .video-preview {
 }
 main .alpha-video .video-preview img.preview {
   width: 100%;
+  box-shadow: 0 55px 112px -65px #c2a394;
 }
 main .alpha-video .video-preview img.play {
   position: absolute;

@@ -53,6 +53,49 @@ var app = new Vue({
       iconPrefix: 'fa-',
       iconFamily: 'fab',
       link: 'https://it.linkedin.com/'
+    }],
+    latestCourses: [{
+      title: "How to be Successful: Create A Growth Mindset For Success",
+      price: '$30',
+      priceCents: '00',
+      previewFile: 'motivation-course-06-480x298.jpg',
+      lessonsNumber: '3',
+      studentsNumber: '50'
+    }, {
+      title: "How to Build Confidence in Your Abilities",
+      price: '$30',
+      priceCents: '00',
+      previewFile: 'motivation-course-05-480x298.jpg',
+      lessonsNumber: '1',
+      studentsNumber: '50'
+    }, {
+      title: "Productivity Machine - Focus in a Distracted World",
+      price: '$20',
+      priceCents: '00',
+      previewFile: 'motivation-course-04-480x298.jpg',
+      lessonsNumber: '5',
+      studentsNumber: '50'
+    }, {
+      title: "Effective Time Management Mastery - Complete Guide",
+      price: '$20',
+      priceCents: '00',
+      previewFile: 'motivation-course-03-480x298.jpg',
+      lessonsNumber: '18',
+      studentsNumber: '50'
+    }, {
+      title: "Body Language Secrets for Entrepeneurs",
+      price: '$25',
+      priceCents: '99',
+      previewFile: 'motivation-course-02-480x298.jpg',
+      lessonsNumber: '19',
+      studentsNumber: '50'
+    }, {
+      title: "Management Skills: The Science of Leadership",
+      price: '$19',
+      priceCents: '99',
+      previewFile: 'motivation-course-01-480x298.jpg',
+      lessonsNumber: '17',
+      studentsNumber: '50'
     }]
   },
   mounted: function mounted() {},
