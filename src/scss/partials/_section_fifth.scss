@@ -1,0 +1,85 @@
+.reviews{
+  .row{
+    position: relative;
+
+    .testimonials, .picture{
+      padding-left: 0;
+      padding-right: 0;
+      height: 537.6px;
+    }
+
+    .testimonials{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-image: url('../img/background-pattern-wavify.png');
+      background-color: $color20;
+      padding: 0 168px;
+
+      .uppercase-title{
+        font-size: 0.7em;
+        font-weight: 600;
+      }
+
+      .review{
+        font-size: 1.3em;
+        font-weight: 600;
+        color: $color2;
+      }
+
+      .author{
+        padding-top: 17px;
+        margin-bottom: 12px;
+        font-weight: 600;
+        color: $color2;
+      }
+
+      .role{
+        font-size: 0.7em;
+        color: $color5;
+      }
+
+      .image{
+        img{
+          border-radius: 50%;
+          width: 73px;
+        }
+      }
+
+    }
+
+    .picture{
+      background-image: url('../img/home-movation-testimonial-image.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .slide-number{
+      border-radius: 50%;
+      background-color: #fff;
+      width: 30px;
+      padding: 14px 42px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      &:hover{
+        cursor: pointer;
+      }
+
+      p{
+        margin-bottom: 8px;
+        margin-top: 8px;
+      }
+
+      img{
+        width: 14px;
+      }
+    }
+  }
+}

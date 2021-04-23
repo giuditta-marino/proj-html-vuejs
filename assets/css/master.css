@@ -546,3 +546,71 @@ main .book-store .logos .logo img {
   filter: grayscale(100%);
   opacity: 0.2;
 }
+main .reviews .row {
+  position: relative;
+}
+main .reviews .row .testimonials, main .reviews .row .picture {
+  padding-left: 0;
+  padding-right: 0;
+  height: 537.6px;
+}
+main .reviews .row .testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("../img/background-pattern-wavify.png");
+  background-color: #fcf7fb;
+  padding: 0 168px;
+}
+main .reviews .row .testimonials .uppercase-title {
+  font-size: 0.7em;
+  font-weight: 600;
+}
+main .reviews .row .testimonials .review {
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #171520;
+}
+main .reviews .row .testimonials .author {
+  padding-top: 17px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: #171520;
+}
+main .reviews .row .testimonials .role {
+  font-size: 0.7em;
+  color: #6b6c6c;
+}
+main .reviews .row .testimonials .image img {
+  border-radius: 50%;
+  width: 73px;
+}
+main .reviews .row .picture {
+  background-image: url("../img/home-movation-testimonial-image.jpg");
+  background-size: cover;
+  background-position: center;
+}
+main .reviews .row .slide-number {
+  border-radius: 50%;
+  background-color: #fff;
+  width: 30px;
+  padding: 14px 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+main .reviews .row .slide-number:hover {
+  cursor: pointer;
+}
+main .reviews .row .slide-number p {
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+main .reviews .row .slide-number img {
+  width: 14px;
+}
