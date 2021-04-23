@@ -15,6 +15,11 @@
       padding-left: 12px;
       padding-right: 12px;
 
+      &:hover{
+        background-image: linear-gradient(to top right, $color20, $color1);
+        cursor: pointer;
+      }
+
       .card{
         border:0;
 

@@ -435,6 +435,10 @@ main .latest-courses .courses [class*=col-] {
   padding-left: 12px;
   padding-right: 12px;
 }
+main .latest-courses .courses [class*=col-]:hover {
+  background-image: linear-gradient(to top right, #fcf7fb, #ffffff);
+  cursor: pointer;
+}
 main .latest-courses .courses [class*=col-] .card {
   border: 0;
 }
