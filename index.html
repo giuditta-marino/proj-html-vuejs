@@ -226,7 +226,7 @@
             </section>
           </div>
 
-          <!-- QUINTA SECTION -->
+          <!-- QUINTA SEZIONE -->
           <section class="reviews">
             <div class="row">
               <div class="testimonials col-lg-6 text-center">
@@ -249,11 +249,31 @@
             </div>
           </section>
 
-          <!-- BLOG UPDATED -->
-          <div class="row"></div>
-          <div class="row"></div>
-          <div class="row"></div>
-
+          <!-- SESTA SEZIONE -->
+          <div class="container">
+            <section class="blog">
+              <div class="row">
+                <p class="uppercase-title">blog updated</p>
+              </div>
+              <div class="row">
+                <h3>Interesting <span class="green-text">articles updated</span> daily</h3>
+              </div>
+              <div class="row">
+                <div class="previews col-lg-3"
+                v-for="article in articles">
+                  <img :src="`./assets/img/${article.imageFile}`" alt="">
+                  <div class="date">{{article.date}}</div>
+                  <p class="title">{{article.title}}</p>
+                  <p class="text-preview">{{article.textPreview}}</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12 text-center">
+                  <p class="green-text text-uppercase"><a href="#">view all posts</a></p>
+                </div>
+              </div>
+            </section>
+          </div>
 
       </main>
 

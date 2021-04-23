@@ -614,3 +614,6 @@ main .reviews .row .slide-number p {
 main .reviews .row .slide-number img {
   width: 14px;
 }
+main .blog .previews img {
+  width: 100%;
+}

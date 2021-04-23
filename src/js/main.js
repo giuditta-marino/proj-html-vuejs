@@ -145,6 +145,38 @@ var app = new Vue(
           previewFile: 'book-2.jpg'
         },
 
+      ],
+
+      articles:
+      [
+        {
+          title: 'How to Stay True to Your Personal Brand',
+          textPreview: 'When it comes to your business or career, you want...',
+          date: 'May 13, 2020',
+          imageFile: 'motivation-blog-04-480x325.jpg'
+        },
+
+        {
+          title: '5 Vital Lessons in 5 Years of Freelancing',
+          textPreview: "Being self-employed and working from home, it's easy to get...",
+          date: 'May 13, 2020',
+          imageFile: 'motivation-blog-03-480x325.jpg'
+        },
+
+        {
+          title: '11 Super Useful Tips for Small-Business Owners',
+          textPreview: 'Being a small-business owner poses a ton of challenges. We...',
+          date: 'May 13, 2020',
+          imageFile: 'motivation-blog-02-480x325.jpg'
+        },
+
+        {
+          title: 'How to Give Yourself Grace to Start Again',
+          textPreview: 'Forgive yourself for bad habits you may started or...',
+          date: 'May 13, 2020',
+          imageFile: 'motivation-blog-01-480x325.jpg'
+        }
+
       ]
 
     },
