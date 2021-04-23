@@ -482,13 +482,16 @@ main .latest-courses .courses [class*=col-] .card .text p.info .students {
 main .latest-courses .view-all button i {
   padding-left: 6px;
 }
+main .book-store .presentation p.uppercase {
+  color: #171520;
+}
 main .book-store .presentation h3 {
   color: #3f3a64;
   font-size: 2.4em;
-  line-height: 50px;
+  line-height: 56px;
 }
 main .book-store .presentation ul li {
-  line-height: 40px;
+  line-height: 35px;
   font-size: 0.9em;
   color: #6b6c6c;
 }
@@ -502,10 +505,44 @@ main .book-store .products {
 }
 main .book-store .products .book-container {
   width: calc(100% / 2);
+  position: relative;
 }
 main .book-store .products .book-container:first-child {
   margin-right: 24px;
 }
+main .book-store .products .book-container:hover .tools {
+  display: block;
+  cursor: pointer;
+}
 main .book-store .products .book-container img {
   width: 100%;
+}
+main .book-store .products .book-container .tools {
+  display: none;
+  position: absolute;
+  top: 17%;
+  left: 76%;
+}
+main .book-store .products .book-container .tools .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 16px;
+  margin-bottom: 7px;
+  width: 13px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+main .book-store .products .book-container .tools .circle i {
+  color: #6b6c6c;
+  font-size: 0.8em;
+}
+main .book-store .logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .book-store .logos .logo img {
+  filter: grayscale(100%);
+  opacity: 0.2;
 }

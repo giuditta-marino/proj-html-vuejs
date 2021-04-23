@@ -1,15 +1,19 @@
 .book-store{
   .presentation{
 
+    p.uppercase{
+      color: $color2;
+    }
+
     h3{
       color: $color10;
       font-size: 2.4em;
-      line-height: 50px;
+      line-height: 56px;
     }
 
     ul{
       li{
-        line-height: 40px;
+        line-height: 35px;
         font-size: 0.9em;
         color: $color5;
 
@@ -28,13 +32,54 @@
 
     .book-container{
       width: calc(100% / 2);
+      position: relative;
 
       &:first-child{
         margin-right: 24px;
       }
 
+      &:hover .tools{
+        display: block;
+        cursor: pointer;
+      }
+
       img{
         width: 100%;
+      }
+
+      .tools{
+        display: none;
+        position: absolute;
+        top: 17%;
+        left: 76%;
+
+        .circle{
+          @include flex-align-center;
+          justify-content: center;
+          padding: 9px 16px;
+          margin-bottom: 7px;
+          width: 13px;
+          border-radius: 50%;
+          background-color: #fff;
+
+          i{
+            color: $color5;
+            font-size: 0.8em;
+          }
+        }
+      }
+    }
+  }
+
+  .logos{
+    @include flex-align-center;
+    justify-content: space-between;
+
+    .logo{
+
+      img{
+        filter: grayscale(100%);
+        opacity: 0.2;
       }
     }
   }
