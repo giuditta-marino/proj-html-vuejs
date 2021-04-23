@@ -1,80 +1,15 @@
-.goals-number>*{
-  p.number{
-    font-size: 2.1em;
-    font-weight: 700;
-    color: $color4;
-  }
-
-  p.description{
-    color: $color2;
-    text-transform: uppercase;
-    font-weight: 400;
-  }
-}
-
-.alpha-male{
-  .title{
-    padding-right: 118px;
-
-    h3{
-      font-size: 2.3em;
-      line-height: 55px;
+.goals{
+  .goals-number>*{
+    p.number{
+      font-size: 2.1em;
+      font-weight: 700;
+      color: $color4;
     }
-  }
 
-  .description{
-    p:first-child{
-      font-size: 1em;
-      font-weight: 600;
+    p.description{
       color: $color2;
-    }
-    p:last-child{
-      font-size: 0.9em;
-      color: $color5;
-    }
-  }
-}
-
-.alpha-video{
-  .video-preview{
-    position: relative;
-
-    img.preview{
-      width: 100%;
-      box-shadow: 0 55px 112px -65px $color17;
-    }
-
-    img.play{
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-    }
-  }
-
-  .video-quote{
-    padding-left: 65px;
-    padding-right: 65px;
-
-    blockquote{
-      font-size: 1.5em;
-      line-height: 42px;
-      padding-top: 44px;
-      padding-bottom: 36px;
-    }
-
-    p.author{
-      font-size: 1.5em;
-      font-weight: 600;
-      padding-top: 20px;
-      margin-bottom: 0;
-    }
-
-    p.wingman{
-      padding-top: 5px;
       text-transform: uppercase;
-      color: $color5;
+      font-weight: 600;
     }
   }
-
 }

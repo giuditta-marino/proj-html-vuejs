@@ -239,12 +239,12 @@
 }
 
 .green-text {
-  color: #20ac97;
+  color: #82ac20;
 }
 
 .green-title {
   text-transform: uppercase;
-  color: #20ac97;
+  color: #82ac20;
   font-size: 0.7em;
 }
 
@@ -271,7 +271,7 @@ ul.no-style {
 }
 
 button {
-  background-color: #20ac97;
+  background-color: #82ac20;
   color: #ffffff;
   border-radius: 4px;
   padding: 15px 44px;
@@ -323,9 +323,13 @@ header .jumbo .peace-on-earth p {
   font-size: 1em;
 }
 header .jumbo .peace-on-earth p.wingman {
-  text-transform: uppercase;
   font-weight: 600;
   color: #171520;
+  position: relative;
+}
+header .jumbo .peace-on-earth p.wingman span {
+  position: absolute;
+  bottom: 2px;
 }
 header .jumbo .peace-on-earth h1 {
   font-size: 3.3em;
@@ -361,63 +365,109 @@ main {
   z-index: 1;
   position: relative;
 }
-main .goals-number > * p.number {
+main .goals .goals-number > * p.number {
   font-size: 2.1em;
   font-weight: 700;
-  color: #20ac97;
+  color: #82ac20;
 }
-main .goals-number > * p.description {
+main .goals .goals-number > * p.description {
   color: #171520;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 600;
 }
-main .alpha-male .title {
+main .about-me .alpha-male .title {
   padding-right: 118px;
 }
-main .alpha-male .title h3 {
+main .about-me .alpha-male .title h3 {
   font-size: 2.3em;
   line-height: 55px;
 }
-main .alpha-male .description p:first-child {
+main .about-me .alpha-male .description p:first-child {
   font-size: 1em;
   font-weight: 600;
   color: #171520;
 }
-main .alpha-male .description p:last-child {
+main .about-me .alpha-male .description p:last-child {
   font-size: 0.9em;
   color: #6b6c6c;
 }
-main .alpha-video .video-preview {
+main .about-me .alpha-video .video-preview {
   position: relative;
 }
-main .alpha-video .video-preview img.preview {
+main .about-me .alpha-video .video-preview img.preview {
   width: 100%;
   box-shadow: 0 55px 112px -65px #c2a394;
 }
-main .alpha-video .video-preview img.play {
+main .about-me .alpha-video .video-preview img.play {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
-main .alpha-video .video-quote {
+main .about-me .alpha-video .video-quote {
   padding-left: 65px;
   padding-right: 65px;
 }
-main .alpha-video .video-quote blockquote {
+main .about-me .alpha-video .video-quote blockquote {
   font-size: 1.5em;
   line-height: 42px;
   padding-top: 44px;
   padding-bottom: 36px;
 }
-main .alpha-video .video-quote p.author {
+main .about-me .alpha-video .video-quote p.author {
   font-size: 1.5em;
   font-weight: 600;
   padding-top: 20px;
   margin-bottom: 0;
 }
-main .alpha-video .video-quote p.wingman {
+main .about-me .alpha-video .video-quote p.wingman {
   padding-top: 5px;
-  text-transform: uppercase;
   color: #6b6c6c;
+}
+main .latest-courses .courses-title p {
+  color: #6b6c6c;
+}
+main .latest-courses .courses-title h2 {
+  color: #3f3a64;
+  font-size: 2.8em;
+}
+main .latest-courses .courses [class*=col-] {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+main .latest-courses .courses [class*=col-] .card {
+  border: 0;
+}
+main .latest-courses .courses [class*=col-] .card .cover img {
+  width: 100%;
+}
+main .latest-courses .courses [class*=col-] .card .text {
+  padding: 28px;
+}
+main .latest-courses .courses [class*=col-] .card .text p {
+  font-size: 1.2em;
+}
+main .latest-courses .courses [class*=col-] .card .text p.price {
+  margin-bottom: 9px;
+}
+main .latest-courses .courses [class*=col-] .card .text p.price, main .latest-courses .courses [class*=col-] .card .text p.title {
+  font-weight: 700;
+}
+main .latest-courses .courses [class*=col-] .card .text p.title {
+  color: #3f3a64;
+  line-height: 35px;
+}
+main .latest-courses .courses [class*=col-] .card .text p.price > .integer {
+  font-size: 1.3em;
+}
+main .latest-courses .courses [class*=col-] .card .text p.info {
+  padding-top: 16px;
+  color: #6b6c6c;
+  font-size: 0.9em;
+}
+main .latest-courses .courses [class*=col-] .card .text p.info .students {
+  padding-left: 30px;
+}
+main .latest-courses .view-all button i {
+  padding-left: 6px;
 }

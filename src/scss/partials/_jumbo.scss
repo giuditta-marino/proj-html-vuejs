@@ -6,9 +6,14 @@
     }
 
     p.wingman{
-      text-transform: uppercase;
       font-weight: 600;
       color: $color2;
+      position: relative;
+
+      span{
+        position: absolute;
+        bottom: 2px;
+      }
     }
 
     h1{
