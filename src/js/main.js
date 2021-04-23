@@ -125,6 +125,26 @@ var app = new Vue(
           lessonsNumber: '17',
           studentsNumber: '50'
         }
+      ],
+
+      books:
+      [
+        {
+          title: 'Alpha man',
+          author: 'Maxcoach',
+          price: '$29',
+          priceCents: '00',
+          previewFile: 'book-1.jpg'
+        },
+
+        {
+          title: 'Real man 4.0',
+          author: 'Maxcoach',
+          price: '$39',
+          priceCents: '00',
+          previewFile: 'book-2.jpg'
+        },
+
       ]
 
     },

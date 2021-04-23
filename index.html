@@ -96,7 +96,7 @@
             <section class="about-me">
               <div class="about row pb-20">
                 <div class="col-lg-12">
-                  <p class="green-title">about me</p>
+                  <p class="uppercase-title green-text">about me</p>
                 </div>
               </div>
               <div class="alpha-male row">
@@ -129,7 +129,7 @@
             <section class="latest-courses pt-30 pb-60">
               <div class="courses-title rowpb-50">
                 <div class="col-lg-12 text-center">
-                  <p class="text-uppercase">begin your journey at maxcoach</p>
+                  <p class="uppercase-title">begin your journey at maxcoach</p>
                 </div>
                 <div class="col-lg-12 text-center">
                   <h2>
@@ -162,8 +162,34 @@
             </section>
 
 
-            <!-- BOOK-STORE -->
-            <div class="row"></div>
+            <!-- QUARTA SEZIONE -->
+            <section class="book-store">
+                <div class="row">
+                  <div class="presentation col-lg-4">
+                    <p class="uppercase-title">book store online</p>
+                    <h3>Be Alpha With <span class="green-text">Wingman's Book</span></h3>
+                    <ul class="no-style pt-20 pb-20">
+                      <li><i class="fas fa-check green-text"></i>Help you understand yourself better</li>
+                      <li><i class="fas fa-check green-text"></i>Revealing mature tips</li>
+                      <li><i class="fas fa-check green-text"></i>Give the right advice</li>
+                      <li><i class="fas fa-check green-text"></i>Fascinating examples of alpha man</li>
+                    </ul>
+                    <button type="button" name="button">Get Free Ebook</button>
+                  </div>
+                  <div class="products col-lg-7 offset-lg-1">
+                    <div class="book-container"
+                    v-for="book in books">
+                      <img :src="`./assets/img/${book.previewFile}`" alt="">
+                      <div class="text text-center">
+                        <p class="title">{{book.title}} by {{book.author}}</p>
+                        <p class="price green-text"><span class="integer"> {{book.price}}</span><span>.{{book.priceCents}}</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row"></div>
+            </section>
+
 
             <!-- LOGOS -->
             <div class="row logos"></div>

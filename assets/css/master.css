@@ -280,6 +280,29 @@ button {
   border: 0;
 }
 
+.uppercase-title {
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.text {
+  padding: 28px;
+}
+.text p {
+  font-size: 1.2em;
+}
+.text p.price, .text p.title {
+  font-weight: 700;
+}
+.text p.title {
+  color: #3f3a64;
+  line-height: 35px;
+}
+.text p.price > .integer {
+  font-size: 1.3em;
+}
+
 header {
   background-image: url("../img/background-pattern-wavify.png");
   background-color: #fcf7fb;
@@ -445,24 +468,8 @@ main .latest-courses .courses [class*=col-] .card {
 main .latest-courses .courses [class*=col-] .card .cover img {
   width: 100%;
 }
-main .latest-courses .courses [class*=col-] .card .text {
-  padding: 28px;
-}
-main .latest-courses .courses [class*=col-] .card .text p {
-  font-size: 1.2em;
-}
 main .latest-courses .courses [class*=col-] .card .text p.price {
   margin-bottom: 9px;
-}
-main .latest-courses .courses [class*=col-] .card .text p.price, main .latest-courses .courses [class*=col-] .card .text p.title {
-  font-weight: 700;
-}
-main .latest-courses .courses [class*=col-] .card .text p.title {
-  color: #3f3a64;
-  line-height: 35px;
-}
-main .latest-courses .courses [class*=col-] .card .text p.price > .integer {
-  font-size: 1.3em;
 }
 main .latest-courses .courses [class*=col-] .card .text p.info {
   padding-top: 16px;
@@ -474,4 +481,31 @@ main .latest-courses .courses [class*=col-] .card .text p.info .students {
 }
 main .latest-courses .view-all button i {
   padding-left: 6px;
+}
+main .book-store .presentation h3 {
+  color: #3f3a64;
+  font-size: 2.4em;
+  line-height: 50px;
+}
+main .book-store .presentation ul li {
+  line-height: 40px;
+  font-size: 0.9em;
+  color: #6b6c6c;
+}
+main .book-store .presentation ul li i {
+  padding-right: 13px;
+}
+main .book-store .products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .book-store .products .book-container {
+  width: calc(100% / 2);
+}
+main .book-store .products .book-container:first-child {
+  margin-right: 24px;
+}
+main .book-store .products .book-container img {
+  width: 100%;
 }

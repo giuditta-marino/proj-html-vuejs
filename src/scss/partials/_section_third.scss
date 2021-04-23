@@ -31,27 +31,9 @@
         }
 
         .text{
-          padding: 28px;
-
-          p{
-            font-size: 1.2em;
-          }
 
           p.price{
             margin-bottom: 9px;
-          }
-
-          p.price, p.title{
-            font-weight: 700;
-          }
-
-          p.title{
-            color: $color10;
-            line-height: 35px;
-          }
-
-          p.price>.integer{
-            font-size: 1.3em;
           }
 
           p.info{
