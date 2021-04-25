@@ -2,6 +2,8 @@ var app = new Vue(
   {
     el: '#root',
     data: {
+      index: 0,
+
       menuNavigation:
       [
         {
@@ -147,6 +149,38 @@ var app = new Vue(
 
       ],
 
+      testimonials:
+      [
+        {
+          name: 'Mina Hollace',
+          role: 'Freelancer',
+          reviewText: "I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.",
+          imageFile: 'testimonial-avata-1.jpg',
+        },
+
+        {
+          name: 'Steven Malkovich',
+          role: 'Web developer',
+          reviewText: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          imageFile: 'testimonial-avata-2.jpg',
+        },
+
+        {
+          name: 'Anthony Ballack',
+          role: 'Photographer',
+          reviewText: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+          imageFile: 'testimonial-avata-3.jpg',
+        },
+
+        {
+          name: 'John Smith',
+          role: 'Teacher',
+          reviewText: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          imageFile: 'testimonial-avata-4.jpg',
+        }
+
+      ],
+
       articles:
       [
         {
@@ -182,11 +216,27 @@ var app = new Vue(
     },
 
     mounted(){
-
+      setInterval(() => {
+        this.next()
+      }, 3000);
     },
-
+    
     methods: {
+      prev: function() {
+        if (this.index == 0) {
+          this.index = this.testimonials.length - 1;
+        } else {
+          this.index = this.index - 1;
+        }
+      },
 
+      next: function() {
+        if (this.index == this.testimonials.length - 1) {
+          this.index = 0;
+        } else {
+          this.index = this.index + 1;
+        }
+      }
     }
 
 

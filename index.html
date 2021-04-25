@@ -203,7 +203,7 @@
                   </div>
                 </div>
 
-                <div class="logos row pt-115 pb-115">
+                <div class="logos row pt-95 pb-115">
                   <div class="logo">
                     <img src="./assets/img/client-logo-1-primary.png" alt="">
                   </div>
@@ -231,20 +231,22 @@
             <div class="row">
               <div class="testimonials col-lg-6 text-center">
                 <p class="green-text uppercase-title">real stories</p>
-                <p class="review pt-20">I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.</p>
+                <p class="review pt-20">{{testimonials[index].reviewText}}</p>
                 <div class="image pt-15">
-                  <img src="./assets/img/testimonial-avata-1.jpg" alt="testimonal-picture">
+                  <img :src="`./assets/img/${testimonials[index].imageFile}`" alt="testimonal-picture">
                 </div>
-                <p class="author">Mina Hollace</p>
-                <p class="role">/ Freelancer</p>
+                <p class="author">{{testimonials[index].name}}</p>
+                <p class="role">/ {{testimonials[index].role}}</p>
               </div>
               <div class="picture col-lg-6">
               </div>
 
               <div class="slide-number">
-                <img src="./assets/img/image.png" alt="">
+                <img src="./assets/img/image.png" alt="arrow-top"
+                @click="prev">
                 <p>1/4</p>
-                <img src="./assets/img/image_1.png" alt="">
+                <img src="./assets/img/image_1.png" alt="arrow-bottom"
+                @click="next">
               </div>
             </div>
           </section>
