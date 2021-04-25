@@ -1,8 +1,53 @@
 .blog{
+
+  .blog-title{
+
+    h3{
+      font-size: 2.4em;
+    }
+  }
+
   .previews{
-    
+
     img{
       width: 100%;
+    }
+
+    .date{
+      color: $color5;
+      font-size: 0.8em;
+
+      i{
+        padding-right: 4px;
+      }
+    }
+
+    .title{
+      color: $color2;
+      font-weight: 700;
+    }
+
+    .text-preview{
+      color: $color5;
+    }
+  }
+
+  .view-all{
+    position: relative;
+
+    p{
+      a{
+        color: $color4;
+      }
+    }
+
+    .underline{
+      border-top: 1px solid $color4;
+      position: absolute;
+      width: 114px;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 62%;
     }
   }
 }

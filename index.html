@@ -251,25 +251,26 @@
 
           <!-- SESTA SEZIONE -->
           <div class="container">
-            <section class="blog">
+            <section class="blog pt-110 pb-110">
               <div class="row">
                 <p class="uppercase-title">blog updated</p>
               </div>
-              <div class="row">
+              <div class="blog-title row">
                 <h3>Interesting <span class="green-text">articles updated</span> daily</h3>
               </div>
-              <div class="row">
-                <div class="previews col-lg-3"
+              <div class="previews row pt-50">
+                <div class="col-lg-3"
                 v-for="article in articles">
                   <img :src="`./assets/img/${article.imageFile}`" alt="">
-                  <div class="date">{{article.date}}</div>
-                  <p class="title">{{article.title}}</p>
+                  <div class="date pt-20"><i class="far fa-calendar"></i> {{article.date}}</div>
+                  <p class="title pt-15">{{article.title}}</p>
                   <p class="text-preview">{{article.textPreview}}</p>
                 </div>
               </div>
-              <div class="row">
+              <div class="view-all row pt-30">
                 <div class="col-lg-12 text-center">
                   <p class="green-text text-uppercase"><a href="#">view all posts</a></p>
+                  <div class="underline"></div>
                 </div>
               </div>
             </section>
