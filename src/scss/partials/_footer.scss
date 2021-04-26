@@ -1,5 +1,6 @@
 footer{
   background-color: $color2;
+  position: relative;
 
   .title{
     color: $color1;
@@ -49,5 +50,21 @@ footer{
 
   .copyright{
     color: $color14;
+    font-size: 0.9em;
+  }
+
+  .top-link{
+    border-radius: 50%;
+    background-color: $color4;
+    padding: 15px 20px;
+    position: absolute;
+    bottom: 31px;
+    right: 63px;
+    @include flex-align-center;
+
+    a{
+      color: $color1;
+      line-height: 0;
+    }
   }
 }

@@ -306,6 +306,7 @@ button {
 header {
   background-image: url("../img/background-pattern-wavify.png");
   background-color: #fcf7fb;
+  position: relative;
 }
 header .header-top nav .logo img {
   height: 20px;
@@ -339,8 +340,23 @@ header .header-top nav .social-links ul li {
 header .header-top nav .social-links ul li a {
   color: #3f3a64;
 }
-header .jumbo {
-  position: relative;
+header .tools {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 24%;
+  background-color: #fff;
+  padding: 9px;
+}
+header .tools i {
+  font-size: 0.8em;
+  color: #6b6c6c;
+  padding-bottom: 18px;
+}
+header .tools i#last {
+  padding-bottom: 0;
 }
 header .jumbo .peace-on-earth {
   padding-right: 114px;
@@ -384,11 +400,6 @@ header .jumbo .image img.shape {
   z-index: 0;
   top: 43%;
   height: 507px;
-}
-header .jumbo .tools {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
 }
 
 main {
@@ -622,6 +633,9 @@ main .reviews .row .slide-number p {
 main .reviews .row .slide-number img {
   width: 14px;
 }
+main .reviews .row .slide-number img:hover {
+  color: #82ac20;
+}
 main .blog .blog-title h3 {
   font-size: 2.4em;
 }
@@ -659,6 +673,7 @@ main .blog .view-all .underline {
 
 footer {
   background-color: #171520;
+  position: relative;
 }
 footer .title {
   color: #ffffff;
@@ -690,4 +705,19 @@ footer .info .information ul li {
 }
 footer .copyright {
   color: #9aa2a6;
+  font-size: 0.9em;
+}
+footer .top-link {
+  border-radius: 50%;
+  background-color: #82ac20;
+  padding: 15px 20px;
+  position: absolute;
+  bottom: 31px;
+  right: 63px;
+  display: flex;
+  align-items: center;
+}
+footer .top-link a {
+  color: #ffffff;
+  line-height: 0;
 }

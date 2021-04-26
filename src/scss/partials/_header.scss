@@ -1,10 +1,36 @@
 header{
   background-image: url('../img/background-pattern-wavify.png');
   background-color: $color20;
+  position: relative;
 
   .header-top{
     @import './_nav.scss';
   }
 
+  .tools{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 24%;
+    background-color: #fff;
+    padding: 9px;
+
+    i{
+      font-size: 0.8em;
+      color: $color5;
+      padding-bottom: 18px;
+    }
+
+    i#last{
+      padding-bottom: 0;
+    }
+
+
+  }
+
   @import './_jumbo.scss'
+
 }

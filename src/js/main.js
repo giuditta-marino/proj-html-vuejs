@@ -156,6 +156,7 @@ var app = new Vue(
           role: 'Freelancer',
           reviewText: "I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.",
           imageFile: 'testimonial-avata-1.jpg',
+          number: '1'
         },
 
         {
@@ -163,6 +164,7 @@ var app = new Vue(
           role: 'Web developer',
           reviewText: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
           imageFile: 'testimonial-avata-2.jpg',
+          number: '2'
         },
 
         {
@@ -170,6 +172,7 @@ var app = new Vue(
           role: 'Photographer',
           reviewText: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
           imageFile: 'testimonial-avata-3.jpg',
+          number: '3'
         },
 
         {
@@ -177,6 +180,7 @@ var app = new Vue(
           role: 'Teacher',
           reviewText: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
           imageFile: 'testimonial-avata-4.jpg',
+          number: '4'
         }
 
       ],

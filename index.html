@@ -61,14 +61,15 @@
               </div>
             </div>
           </div>
-
-          <div class="tools">
-            <i class="fas fa-ruler-combined"></i>
-            <i class="fas fa-life-ring"></i>
-            <i class="fas fa-book"></i>
-            <i class="fas fa-shopping-cart"></i>
-          </div>
         </div>
+
+        <div class="tools">
+          <a href="#"><i class="fas fa-ruler-combined"></i></a>
+          <a href="#"><i class="fas fa-life-ring"></i></a>
+          <a href="#"><i class="fas fa-book"></i></a>
+          <a href="#"><i class="fas fa-shopping-cart" id="last"></i></a>
+        </div>
+
       </header>
 
       <!-- MAIN -->
@@ -250,7 +251,7 @@
               <div class="slide-number">
                 <img src="./assets/img/image.png" alt="arrow-top"
                 @click="prev">
-                <p>1/4</p>
+                <p>{{testimonials[index].number}}/{{testimonials.length}}</p>
                 <img src="./assets/img/image_1.png" alt="arrow-bottom"
                 @click="next">
               </div>
@@ -335,6 +336,10 @@
             </div>
           </div>
 
+        </div>
+
+        <div class="top-link">
+          <a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
         </div>
       </footer>
     </div>

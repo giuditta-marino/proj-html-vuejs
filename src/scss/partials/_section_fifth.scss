@@ -79,6 +79,10 @@
 
       img{
         width: 14px;
+
+        &:hover{
+          color: $color4;
+        }
       }
     }
   }
