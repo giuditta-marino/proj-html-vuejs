@@ -59,8 +59,14 @@
                 <img class="motivation" src="./assets/img/motivation.png" alt="man-portrait">
                 <img class="shape" src="./assets/img/motivation_face.png" alt="face-shape-illustration">
               </div>
-
             </div>
+          </div>
+
+          <div class="tools">
+            <i class="fas fa-ruler-combined"></i>
+            <i class="fas fa-life-ring"></i>
+            <i class="fas fa-book"></i>
+            <i class="fas fa-shopping-cart"></i>
           </div>
         </div>
       </header>
@@ -233,7 +239,7 @@
                 <p class="green-text uppercase-title">real stories</p>
                 <p class="review pt-20">{{testimonials[index].reviewText}}</p>
                 <div class="image pt-15">
-                  <img :src="`./assets/img/${testimonials[index].imageFile}`" alt="testimonal-picture">
+                  <img :src="`./assets/img/${testimonials[index].imageFile}`" alt="testimonial-picture">
                 </div>
                 <p class="author">{{testimonials[index].name}}</p>
                 <p class="role">/ {{testimonials[index].role}}</p>
@@ -282,9 +288,54 @@
 
       <!-- FOOTER -->
       <footer>
-        <div class="row"></div>
-        <div class="row"></div>
+        <div class="container">
+          <div class="title row pt-50">
+            <div class="col-lg-6">
+              <p>Address</p>
+            </div>
+            <div class="col-lg-3">
+              <p>Explore</p>
+            </div>
+            <div class="col-lg-3">
+              <p>Information</p>
+            </div>
+          </div>
+          <div class="info row pb-50">
+            <div class="address-socials col-lg-6">
+              <p>382 NE 191 St # 87394 Miami, FL 33179-3899</p>
+              <p>+1(305)547-9909 (9am - 5p, EST, Monday - Friday)</p>
+              <p>support@maxcoach.com</p>
+              <ul class="socials no-style pt-25">
+                <li v-for="social in footerSocials"><a :href="social.link"><i :class="`${social.iconFamily} ${social.iconPrefix}${social.iconName}`"></i></a></li>
+              </ul>
+            </div>
+            <div class="explore col-lg-3">
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul class="no-style">
+                    <li v-for="explore in footerExplore.slice(0, 3)"><a :href="`${explore.link}`">{{explore.title}}</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul class="no-style">
+                    <li v-for="explore in footerExplore.slice(3, 6)"><a :href="`${explore.link}`">{{explore.title}}</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="information col-lg-3">
+              <ul class="no-style">
+                <li v-for="information in footerInformation"><a :href="`${information.link}`">{{information.title}}</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="copyright row pb-30">
+            <div class="col-lg-12 text-center">
+              <p>&copy; 2020 Maxcoach. All Rights Reserved</p>
+            </div>
+          </div>
 
+        </div>
       </footer>
     </div>
 

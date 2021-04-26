@@ -339,6 +339,9 @@ header .header-top nav .social-links ul li {
 header .header-top nav .social-links ul li a {
   color: #3f3a64;
 }
+header .jumbo {
+  position: relative;
+}
 header .jumbo .peace-on-earth {
   padding-right: 114px;
 }
@@ -381,6 +384,11 @@ header .jumbo .image img.shape {
   z-index: 0;
   top: 43%;
   height: 507px;
+}
+header .jumbo .tools {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
 }
 
 main {
@@ -647,4 +655,39 @@ main .blog .view-all .underline {
   left: 50%;
   transform: translateX(-50%);
   top: 62%;
+}
+
+footer {
+  background-color: #171520;
+}
+footer .title {
+  color: #ffffff;
+  font-weight: 700;
+}
+footer .title p {
+  margin-bottom: 17px;
+}
+footer .info {
+  color: #9aa2a6;
+  font-size: 0.9em;
+}
+footer .info a {
+  color: #9aa2a6;
+}
+footer .info .address-socials ul.socials {
+  display: flex;
+  align-items: center;
+}
+footer .info .address-socials ul.socials li {
+  font-size: 1.7em;
+  margin-right: 30px;
+}
+footer .info .explore ul li {
+  margin-bottom: 17px;
+}
+footer .info .information ul li {
+  margin-bottom: 17px;
+}
+footer .copyright {
+  color: #9aa2a6;
 }

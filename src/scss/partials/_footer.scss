@@ -1,0 +1,53 @@
+footer{
+  background-color: $color2;
+
+  .title{
+    color: $color1;
+    font-weight: 700;
+
+    p{
+      margin-bottom: 17px;
+    }
+  }
+
+  .info{
+    color: $color14;
+    font-size: 0.9em;
+
+    a{
+      color: $color14;
+    }
+
+    .address-socials{
+      ul.socials{
+
+        @include flex-align-center;
+
+        li{
+          font-size: 1.7em;
+          margin-right: 30px;
+        }
+      }
+    }
+
+    .explore{
+      ul{
+        li{
+          margin-bottom: 17px;
+        }
+      }
+    }
+
+    .information{
+      ul{
+        li{
+          margin-bottom: 17px;
+        }
+      }
+    }
+  }
+
+  .copyright{
+    color: $color14;
+  }
+}

@@ -211,7 +211,100 @@ var app = new Vue(
           imageFile: 'motivation-blog-01-480x325.jpg'
         }
 
+      ],
+
+      footerSocials:
+      [
+
+        {
+          name: 'Facebook',
+          iconName: 'facebook-f',
+          iconPrefix: 'fa-',
+          iconFamily: 'fab',
+          link: 'https://www.facebook.com/'
+        },
+
+        {
+          name: 'Twitter',
+          iconName: 'twitter',
+          iconPrefix: 'fa-',
+          iconFamily: 'fab',
+          link: 'https://twitter.com/'
+        },
+
+        {
+          name: 'Instagram',
+          iconName: 'instagram',
+          iconPrefix: 'fa-',
+          iconFamily: 'fab',
+          link: 'https://www.instagram.com/'
+        },
+
+        {
+          name: 'Linkedin',
+          iconName: 'linkedin',
+          iconPrefix: 'fa-',
+          iconFamily: 'fab',
+          link: 'https://it.linkedin.com/'
+        }
+      ],
+
+      footerExplore:
+      [
+        {
+          title: 'Start here',
+          link: '#'
+        },
+
+        {
+          title: 'Blog',
+          link: '#'
+        },
+
+        {
+          title: 'About us',
+          link: '#'
+        },
+
+        {
+          title: 'Success story',
+          link: '#'
+        },
+
+        {
+          title: 'Courses',
+          link: '#'
+        },
+
+        {
+          title: 'Contact us',
+          link: '#'
+        }
+      ],
+
+      footerInformation:
+      [
+        {
+          title: 'Membership',
+          link: '#'
+        },
+
+        {
+          title: 'Purchase guide',
+          link: '#'
+        },
+
+        {
+          title: 'Privacy policy',
+          link: '#'
+        },
+
+        {
+          title: 'Terms of service',
+          link: '#'
+        }
       ]
+
 
     },
 
@@ -220,7 +313,7 @@ var app = new Vue(
         this.next()
       }, 3000);
     },
-    
+
     methods: {
       prev: function() {
         if (this.index == 0) {
@@ -236,7 +329,18 @@ var app = new Vue(
         } else {
           this.index = this.index + 1;
         }
-      }
+      },
+
+      // swap: function(array) {
+      //   const newSocials =
+      //     var temp = this.socials[0];
+      //     this.socials[0] = this.socials[1];
+      //     this.socials[1] = temp;
+      //
+      //   this.socials = newSocials;
+      //
+      // }
+
     }
 
 
