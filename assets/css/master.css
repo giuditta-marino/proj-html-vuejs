@@ -248,6 +248,29 @@
   font-size: 0.7em;
 }
 
+.uppercase-title {
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.text {
+  padding: 28px;
+}
+.text p {
+  font-size: 1.2em;
+}
+.text p.price, .text p.title {
+  font-weight: 700;
+}
+.text p.title {
+  color: #3f3a64;
+  line-height: 35px;
+}
+.text p.price > .integer {
+  font-size: 1.3em;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -278,29 +301,6 @@ button {
   font-size: 0.7em;
   font-weight: bold;
   border: 0;
-}
-
-.uppercase-title {
-  text-transform: uppercase;
-  font-size: 1em;
-  font-weight: 400;
-}
-
-.text {
-  padding: 28px;
-}
-.text p {
-  font-size: 1.2em;
-}
-.text p.price, .text p.title {
-  font-weight: 700;
-}
-.text p.title {
-  color: #3f3a64;
-  line-height: 35px;
-}
-.text p.price > .integer {
-  font-size: 1.3em;
 }
 
 header {
@@ -633,9 +633,6 @@ main .reviews .row .slide-number p {
 main .reviews .row .slide-number img {
   width: 14px;
 }
-main .reviews .row .slide-number img:hover {
-  color: #82ac20;
-}
 main .blog .blog-title h3 {
   font-size: 2.4em;
 }
@@ -674,6 +671,7 @@ main .blog .view-all .underline {
 footer {
   background-color: #171520;
   position: relative;
+  font-weight: 600;
 }
 footer .title {
   color: #ffffff;
