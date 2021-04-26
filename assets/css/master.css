@@ -311,6 +311,12 @@ header {
 header .header-top nav .logo img {
   height: 20px;
 }
+@media all and (max-width: 768px) {
+  header .header-top nav .logo {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
 header .header-top nav .menu-navigation {
   padding-left: 36px;
   padding-right: 36px;
@@ -332,6 +338,11 @@ header .header-top nav .social-links ul {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+}
+@media all and (max-width: 768px) {
+  header .header-top nav .social-links ul {
+    justify-content: center;
+  }
 }
 header .header-top nav .social-links ul li {
   font-size: 1em;
@@ -361,6 +372,11 @@ header .tools i#last {
 header .jumbo .peace-on-earth {
   padding-right: 114px;
 }
+@media all and (min-width: 992px) and (max-width: 1082px) {
+  header .jumbo .peace-on-earth {
+    padding-right: 102px;
+  }
+}
 header .jumbo .peace-on-earth p {
   font-size: 1em;
 }
@@ -377,6 +393,11 @@ header .jumbo .peace-on-earth h1 {
   font-size: 3.3em;
   line-height: 78px;
 }
+@media all and (min-width: 992px) and (max-width: 1082px) {
+  header .jumbo .peace-on-earth h1 {
+    font-size: 3em;
+  }
+}
 header .jumbo .peace-on-earth p.subtitle {
   font-size: 1.2em;
   color: #6b6c6c;
@@ -389,8 +410,14 @@ header .jumbo .image {
   padding-left: 20px;
   position: relative;
 }
+@media all and (max-width: 768px) {
+  header .jumbo .image {
+    text-align: center;
+    padding-top: 0;
+  }
+}
 header .jumbo .image img.motivation {
-  position: absolute;
+  position: relative;
   z-index: 1;
   height: 612px;
 }
@@ -400,6 +427,12 @@ header .jumbo .image img.shape {
   z-index: 0;
   top: 43%;
   height: 507px;
+}
+@media all and (max-width: 768px) {
+  header .jumbo .image img.shape {
+    left: 122px;
+    top: 218px;
+  }
 }
 
 main {
@@ -522,6 +555,11 @@ main .book-store .products {
   align-items: center;
   justify-content: center;
 }
+@media all and (max-width: 768px) {
+  main .book-store .products {
+    padding-top: 40px;
+  }
+}
 main .book-store .products .book-container {
   width: calc(100% / 2);
   position: relative;
@@ -561,9 +599,20 @@ main .book-store .logos {
   align-items: center;
   justify-content: space-between;
 }
+@media all and (max-width: 768px) {
+  main .book-store .logos {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
 main .book-store .logos .logo img {
   filter: grayscale(100%);
   opacity: 0.2;
+}
+@media all and (max-width: 768px) {
+  main .book-store .logos .logo img {
+    width: 50px;
+  }
 }
 main .reviews .row {
   position: relative;
@@ -638,6 +687,7 @@ main .blog .blog-title h3 {
 }
 main .blog .previews img {
   width: 100%;
+  border-radius: 6px;
 }
 main .blog .previews .date {
   color: #6b6c6c;

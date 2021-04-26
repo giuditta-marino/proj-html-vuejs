@@ -6,6 +6,10 @@ nav{
     height: 20px;
     }
 
+    @media all and (max-width: $breakpoint-md) {
+      text-align: center;
+      padding-bottom: 20px;
+    }
   }
 
   .menu-navigation{
@@ -33,6 +37,10 @@ nav{
     ul{
       @include flex-align-center;
       justify-content: flex-end;
+      
+      @media all and (max-width: $breakpoint-md) {
+        justify-content: center;
+      }
 
       li{
         font-size: 1em;

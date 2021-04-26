@@ -29,6 +29,9 @@
   .products{
     @include flex-align-center;
     justify-content: center;
+    @media all and (max-width: $breakpoint-md) {
+      padding-top: 40px;
+    }
 
     .book-container{
       width: calc(100% / 2);
@@ -75,11 +78,20 @@
     @include flex-align-center;
     justify-content: space-between;
 
+    @media all and (max-width: $breakpoint-md) {
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+
     .logo{
 
       img{
         filter: grayscale(100%);
         opacity: 0.2;
+
+        @media all and (max-width: $breakpoint-md) {
+        width: 50px;
+        }
       }
     }
   }
