@@ -5,22 +5,22 @@ var __webpack_exports__ = {};
   \************************/
 menuNavigation = [{
   name: 'Home',
-  link: 'https://maxcoach.thememove.com/'
+  link: '#'
 }, {
   name: 'Pages',
-  link: 'https://maxcoach.thememove.com/main/courses/#'
+  link: '#'
 }, {
   name: 'Courses',
-  link: 'https://maxcoach.thememove.com/main/courses/'
+  link: '#'
 }, {
   name: 'Features',
-  link: 'https://maxcoach.thememove.com/main/events/'
+  link: '#'
 }, {
   name: 'Blog',
-  link: 'https://maxcoach.thememove.com/main/blog/'
+  link: '#'
 }, {
   name: 'Shop',
-  link: 'https://maxcoach.thememove.com/main/product/use-seo-to-boost-your-business/'
+  link: '#'
 }];
 socials = [{
   name: 'Twitter',
