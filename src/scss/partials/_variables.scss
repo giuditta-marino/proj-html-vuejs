@@ -2,7 +2,7 @@
 $color1: #ffffff;
 $color2: #171520;
 $color3: #bbbcbd;
-$color4: #82ac20;
+$color4: #20ac97;
 $color5: #6b6c6c;
 $color6: #e2251a;
 $color7: #77440e;
@@ -20,5 +20,8 @@ $color19: #141423;
 $color20: #fcf7fb;
 
 // BREAKPOINTS
-  $breakpoint-sm: 480px;
+  $breakpoint-sm: 576px;
   $breakpoint-md: 768px;
+  $breakpoint-lg: 992px;
+  $breakpoint-xl: 1200px;
+  $breakpoint-xxl: 1500px;

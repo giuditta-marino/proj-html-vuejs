@@ -23,6 +23,9 @@
   }
 
   .alpha-video{
+    @media all and (min-width: $breakpoint-lg){
+    padding-bottom: 100px;
+    }
     .video-preview{
       position: relative;
 

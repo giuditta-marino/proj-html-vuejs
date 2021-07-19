@@ -10,280 +10,274 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="./assets/css/master.css">
     <title>MaxCoach</title>
   </head>
-  <body>
-
     <div id="root">
+      <body>
+
+
       <!-- HEADER -->
       <header>
-        <div class="container">
-          <!-- HEADER-TOP -->
-          <div class="header-top pt-30">
-            <nav class="row">
-              <!-- LOGO -->
-              <div class="logo col-lg-3"><img src="./assets/img/dark-logo.png" alt="maxcoach-logo"></div>
+        <!-- HEADER-TOP -->
+        <div class="header-top pt-30 container">
 
-              <!-- MENU-NAVIGATION -->
-              <div class="menu-navigation col-lg-6">
-                <ul class="no-style">
-                  <!-- GENERO TANTI LI QUANTE SONO LE SECTION (OGGETTI) NELL'ARRAY
-                  OGNI SECTION AVRA' UN TITOLO E UN LINK -->
-                  <li v-for="menu in menuNavigation">
-                    <a :href="menu.link">{{menu.name}} <i class="fas fa-angle-down"></i></a>
-                  </li>
-                </ul>
-              </div>
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="navbar-brand logo"><img src="./assets/img/dark-logo.png" alt="maxcoach-logo"></div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-              <!-- SOCIAL-LINKS -->
-              <div class="social-links col-lg-3">
-                <ul class="no-style">
-                  <li v-for= "social in socials"><a :href="social.link"><i :class="social.iconFamily + ' ' + social.iconPrefix + social.iconName"></i></a></li>
-                </ul>
-              </div>
-            </nav>
-          </div>
+            <div class="collapse navbar-collapse menu-navigation" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li v-for="menu in menuNavigation" class="nav-item active">
+                  <a :href="menu.link" class="nav-link">{{menu.name}} <i class="fas fa-angle-down"></i></a>
+                </li>
+              </ul>
+              <ul class="no-style social-links">
+                <li v-for= "social in socials"><a :href="social.link"><i :class="social.iconFamily + ' ' + social.iconPrefix + social.iconName"></i></a></li>
+              </ul>
+            </div>
+          </nav>
 
-          <!-- JUMBO -->
-          <div class="jumbo">
-            <div class="row">
-              <div class="peace-on-earth col-lg-6 pt-100 pb-100">
-                <p class="wingman text-uppercase">I'm wingman</p>
-                <h1>Peace On Earth A Wonderful Wish But No Way</h1>
-                <p class="subtitle pt-10 pb-10">Success isn't overnight. It's when everyday you get a little better than the day before. It all adds up.</p>
-                <button type="button" name="button">Get Started For Free <i class="fas fa-arrow-right"></i></button>
-              </div>
-              <div class="image col-lg-6 pt-50">
-                <img class="motivation" src="./assets/img/motivation.png" alt="man-portrait">
-                <img class="shape" src="./assets/img/motivation_face.png" alt="face-shape-illustration">
-              </div>
+        <!-- JUMBO -->
+        <div class="jumbo container">
+          <div class="row">
+            <div class="peace-on-earth col-lg-6 pt-100 pb-100">
+              <p class="wingman text-uppercase">I'm wingman</p>
+              <h1>Peace On Earth A Wonderful Wish But No Way</h1>
+              <p class="subtitle pt-10 pb-10">Success isn't overnight. It's when everyday you get a little better than the day before. It all adds up.</p>
+              <button type="button" name="button">Get Started For Free <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="image col-lg-6 pt-50">
+              <img class="motivation" src="./assets/img/motivation.png" alt="man-portrait">
+              <img class="shape" src="./assets/img/motivation_face.png" alt="face-shape-illustration">
             </div>
           </div>
         </div>
 
+        <!-- PANNELLO TOOLS A DESTRA IN ALTO -->
         <div class="tools">
           <a href="#"><i class="fas fa-ruler-combined"></i></a>
           <a href="#"><i class="fas fa-life-ring"></i></a>
           <a href="#"><i class="fas fa-book"></i></a>
           <a href="#"><i class="fas fa-shopping-cart" id="last"></i></a>
         </div>
-
       </header>
 
       <!-- MAIN -->
       <main>
-        <div class="container">
-
-            <!-- PRIMA SECTION -->
-            <section class="goals">
-              <div class="goals-number row pt-90 pb-90 text-center">
-                <div class="col-lg-3">
-                  <p class="number">1.926</p>
-                  <p class="description">finished sessions</p>
-                </div>
-                <div class="col-lg-3">
-                  <p class="number">100%</p>
-                  <p class="description">satisfaction rate</p>
-                </div>
-                <div class="col-lg-3">
-                  <p class="number">3092+</p>
-                  <p class="description">enrolled learners</p>
-                </div>
-                <div class="col-lg-3">
-                  <p class="number">200</p>
-                  <p class="description">online instructions</p>
-                </div>
+          <!-- PRIMA SECTION -->
+          <section class="goals container">
+            <div class="goals-number row pt-90 pb-90 text-center">
+              <div class="col-lg-3">
+                <p class="number">1.926</p>
+                <p class="description">finished sessions</p>
               </div>
-            </section>
-
-
-            <!-- SECONDA SECTION -->
-            <section class="about-me">
-              <div class="about row pb-20">
-                <div class="col-lg-12">
-                  <p class="uppercase-title green-text">about me</p>
-                </div>
+              <div class="col-lg-3">
+                <p class="number">100%</p>
+                <p class="description">satisfaction rate</p>
               </div>
-              <div class="alpha-male row">
-                <div class="title col-lg-6">
-                  <h3>How to Be an Alpha Male: The 15 Habits of True Alphas</h3>
-                </div>
-                <div class="description col-lg-6">
-                  <p>Want to learn how to be an <span class="green-text">alpha male</span>? How to be more masculine? How to be the man you've always wanted to be?</p>
-                  <p>Your goal is to show the consistency of business, core values, and customer core. <br>
-                  Punctually, responsibility, individuality, accuracy, enthusiasm - you have to clearly explain how these qualities are applicable to your work. And the important thing is you do love what you do.</p>
-                </div>
+              <div class="col-lg-3">
+                <p class="number">3092+</p>
+                <p class="description">enrolled learners</p>
               </div>
-              <div class="alpha-video row pt-65 pb-100">
-                <div class="video-preview col-lg-7">
-                  <img class="preview" src="./assets/img/video-poster.jpg" alt="video-preview">
-                  <img class="play" src="./assets/img/icon-youtube-play.png" alt="youtube-play-icon">
-                </div>
-                <div class="video-quote col-lg-5">
-                  <blockquote cite="http://">
-                    "Every morning you have two choices: continue to sleep with your dreams, or wake up and chase them."
-                  </blockquote>
-                  <img src="./assets/img/motivation-shape.png" alt="wave-illustration">
-                  <p class="author">Kaixa Stark</p>
-                  <p class="wingman text-uppercase">wingman</p>
-                </div>
-              </div>
-            </section>
-
-            <!-- TERZA SECTION -->
-            <section class="latest-courses pt-30">
-              <div class="courses-title rowpb-50">
-                <div class="col-lg-12 text-center">
-                  <p class="uppercase-title">begin your journey at maxcoach</p>
-                </div>
-                <div class="col-lg-12 text-center">
-                  <h2>
-                    Latest <span class="green-text">Online Courses</span>
-                  </h2>
-                </div>
-              </div>
-
-              <div class="courses row">
-                <div class="col-lg-4 pt-20 pb-20"
-                v-for="course in latestCourses">
-                  <div class="card">
-                    <div class="cover">
-                      <img :src="`./assets/img/${course.previewFile}`" alt="`${course.title}-preview`">
-                    </div>
-                    <div class="text">
-                      <p class="price green-text"><span class="integer">{{course.price}}</span>.{{course.priceCents}}<span></span></p>
-                      <p class="title">{{course.title}}</p>
-                      <p class="info"><span class="lessons"><i class="far fa-file-alt"></i> {{course.lessonsNumber}} Lessons </span> <span class="students"><i class="far fa-user"></i> {{course.studentsNumber}} Students</span></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row view-all pt-10">
-                <div class="col-lg-12 text-center">
-                  <button type="button" name="button">View all courses <i class="fas fa-arrow-right"></i></button>
-                </div>
-              </div>
-            </section>
-
-
-            <!-- QUARTA SEZIONE -->
-            <section class="book-store pt-100">
-                <div class="row">
-                  <div class="presentation col-lg-4">
-                    <p class="uppercase-title">book store online</p>
-                    <h3>Be Alpha With <span class="green-text">Wingman's Book</span></h3>
-                    <ul class="no-style pt-20 pb-20">
-                      <li><i class="fas fa-check green-text"></i>Help you understand yourself better</li>
-                      <li><i class="fas fa-check green-text"></i>Revealing mature tips</li>
-                      <li><i class="fas fa-check green-text"></i>Give the right advice</li>
-                      <li><i class="fas fa-check green-text"></i>Fascinating examples of alpha man</li>
-                    </ul>
-                    <button type="button" name="button">Get Free Ebook</button>
-                  </div>
-                  <div class="products col-lg-7 offset-lg-1">
-                    <div class="book-container"
-                    v-for="book in books">
-                      <img :src="`./assets/img/${book.previewFile}`" alt="">
-                      <div class="text text-center">
-                        <p class="title">{{book.title}} by {{book.author}}</p>
-                        <p class="price green-text"><span class="integer"> {{book.price}}</span><span>.{{book.priceCents}}</span></p>
-                      </div>
-
-                      <div class="tools">
-                        <div class="circle">
-                          <i class="fas fa-search"></i>
-                        </div>
-                        <div class="circle">
-                          <i class="fas fa-shopping-cart"></i>
-                        </div>
-                        <div class="circle">
-                          <i class="far fa-heart"></i>
-                        </div>
-                        <div class="circle">
-                          <i class="fas fa-signal"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="logos row pt-90 pb-110">
-                  <div class="logo">
-                    <img src="./assets/img/client-logo-1-primary.png" alt="">
-                  </div>
-                  <div class="logo">
-                    <img src="./assets/img/client-logo-2-primary.png" alt="">
-                  </div>
-                  <div class="logo">
-                    <img src="./assets/img/client-logo-3-primary.png" alt="">
-                  </div>
-                  <div class="logo">
-                    <img src="./assets/img/client-logo-4-primary.png" alt="">
-                  </div>
-                  <div class="logo">
-                    <img src="./assets/img/client-logo-5-primary.png" alt="">
-                  </div>
-                  <div class="logo">
-                    <img src="./assets/img/client-logo-6-primary.png" alt="">
-                  </div>
-                </div>
-            </section>
-          </div>
-
-          <!-- QUINTA SEZIONE -->
-          <section class="reviews">
-            <div class="row">
-              <div class="testimonials col-lg-6 text-center">
-                <p class="green-text uppercase-title">real stories</p>
-                <p class="review pt-20">{{testimonials[index].reviewText}}</p>
-                <div class="image pt-15">
-                  <img :src="`./assets/img/${testimonials[index].imageFile}`" alt="testimonial-picture">
-                </div>
-                <p class="author">{{testimonials[index].name}}</p>
-                <p class="role">/ {{testimonials[index].role}}</p>
-              </div>
-              <div class="picture col-lg-6">
-              </div>
-
-              <div class="slide-number">
-                <img src="./assets/img/image.png" alt="arrow-top"
-                @click="prev">
-                <p>{{testimonials[index].number}}/{{testimonials.length}}</p>
-                <img src="./assets/img/image_1.png" alt="arrow-bottom"
-                @click="next">
+              <div class="col-lg-3">
+                <p class="number">200</p>
+                <p class="description">online instructions</p>
               </div>
             </div>
           </section>
 
-          <!-- SESTA SEZIONE -->
-          <div class="container">
-            <section class="blog pt-110 pb-110">
+
+          <!-- SECONDA SECTION -->
+          <section class="about-me container">
+            <div class="about row pb-20">
+              <div class="col-lg-12">
+                <p class="uppercase-title green-text">about me</p>
+              </div>
+            </div>
+            <div class="alpha-male row">
+              <div class="title col-lg-6">
+                <h3>How to Be an Alpha Male: The 15 Habits of True Alphas</h3>
+              </div>
+              <div class="description col-lg-6">
+                <p>Want to learn how to be an <span class="green-text">alpha male</span>? How to be more masculine? How to be the man you've always wanted to be?</p>
+                <p>Your goal is to show the consistency of business, core values, and customer core. <br>
+                Punctually, responsibility, individuality, accuracy, enthusiasm - you have to clearly explain how these qualities are applicable to your work. And the important thing is you do love what you do.</p>
+              </div>
+            </div>
+            <div class="alpha-video row pt-65 pb-60">
+              <div class="video-preview col-lg-7">
+                <img class="preview" src="./assets/img/video-poster.jpg" alt="video-preview">
+                <img class="play" src="./assets/img/icon-youtube-play.png" alt="youtube-play-icon">
+              </div>
+              <div class="video-quote col-lg-5">
+                <blockquote cite="http://">
+                  "Every morning you have two choices: continue to sleep with your dreams, or wake up and chase them."
+                </blockquote>
+                <img src="./assets/img/motivation-shape.png" alt="wave-illustration">
+                <p class="author">Kaixa Stark</p>
+                <p class="wingman text-uppercase">wingman</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- TERZA SECTION -->
+          <section class="latest-courses pt-30 container">
+            <div class="courses-title rowpb-50">
+              <div class="col-lg-12 text-center">
+                <p class="uppercase-title">begin your journey at maxcoach</p>
+              </div>
+              <div class="col-lg-12 text-center">
+                <h2>
+                  Latest <span class="green-text">Online Courses</span>
+                </h2>
+              </div>
+            </div>
+
+            <div class="courses row">
+              <div class="col-lg-4 pt-20 pb-20"
+              v-for="course in latestCourses">
+                <div class="card">
+                  <div class="cover">
+                    <img :src="`./assets/img/${course.previewFile}`" alt="`${course.title}-preview`">
+                  </div>
+                  <div class="text">
+                    <p class="price green-text"><span class="integer">{{course.price}}</span>.{{course.priceCents}}<span></span></p>
+                    <p class="title">{{course.title}}</p>
+                    <p class="info"><span class="lessons"><i class="far fa-file-alt"></i> {{course.lessonsNumber}} Lessons </span> <span class="students"><i class="far fa-user"></i> {{course.studentsNumber}} Students</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row view-all pt-10">
+              <div class="col-lg-12 text-center">
+                <button type="button" name="button">View all courses <i class="fas fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </section>
+
+
+          <!-- QUARTA SEZIONE -->
+          <section class="book-store pt-100 container">
               <div class="row">
-                <p class="uppercase-title">blog updated</p>
-              </div>
-              <div class="blog-title row">
-                <h3>Interesting <span class="green-text">articles updated</span> daily</h3>
-              </div>
-              <div class="previews row pt-45">
-                <div class="col-lg-3"
-                v-for="article in articles">
-                  <img :src="`./assets/img/${article.imageFile}`" alt="">
-                  <div class="date pt-20"><i class="far fa-calendar"></i> {{article.date}}</div>
-                  <p class="title pt-15">{{article.title}}</p>
-                  <p class="text-preview">{{article.textPreview}}</p>
+                <div class="presentation col-lg-4">
+                  <p class="uppercase-title">book store online</p>
+                  <h3>Be Alpha With <span class="green-text">Wingman's Book</span></h3>
+                  <ul class="no-style pt-20 pb-20">
+                    <li><i class="fas fa-check green-text"></i>Help you understand yourself better</li>
+                    <li><i class="fas fa-check green-text"></i>Revealing mature tips</li>
+                    <li><i class="fas fa-check green-text"></i>Give the right advice</li>
+                    <li><i class="fas fa-check green-text"></i>Fascinating examples of alpha man</li>
+                  </ul>
+                  <button type="button" name="button">Get Free Ebook</button>
+                </div>
+                <div class="products col-lg-7 offset-lg-1">
+                  <div class="book-container"
+                  v-for="book in books">
+                    <img :src="`./assets/img/${book.previewFile}`" alt="">
+                    <div class="text text-center">
+                      <p class="title">{{book.title}} by {{book.author}}</p>
+                      <p class="price green-text"><span class="integer"> {{book.price}}</span><span>.{{book.priceCents}}</span></p>
+                    </div>
+
+                    <div class="tools">
+                      <div class="circle">
+                        <i class="fas fa-search"></i>
+                      </div>
+                      <div class="circle">
+                        <i class="fas fa-shopping-cart"></i>
+                      </div>
+                      <div class="circle">
+                        <i class="far fa-heart"></i>
+                      </div>
+                      <div class="circle">
+                        <i class="fas fa-signal"></i>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="view-all row pt-30">
-                <div class="col-lg-12 text-center">
-                  <p class="green-text text-uppercase"><a href="#">view all posts</a></p>
-                  <div class="underline"></div>
+
+              <div class="logos row pt-90 pb-110">
+                <div class="logo">
+                  <img src="./assets/img/client-logo-1-primary.png" alt="">
+                </div>
+                <div class="logo">
+                  <img src="./assets/img/client-logo-2-primary.png" alt="">
+                </div>
+                <div class="logo">
+                  <img src="./assets/img/client-logo-3-primary.png" alt="">
+                </div>
+                <div class="logo">
+                  <img src="./assets/img/client-logo-4-primary.png" alt="">
+                </div>
+                <div class="logo">
+                  <img src="./assets/img/client-logo-5-primary.png" alt="">
+                </div>
+                <div class="logo">
+                  <img src="./assets/img/client-logo-6-primary.png" alt="">
                 </div>
               </div>
-            </section>
+          </section>
+
+
+        <!-- QUINTA SEZIONE -->
+        <section class="reviews">
+          <div class="row">
+            <div class="testimonials col-lg-6 text-center">
+              <p class="green-text uppercase-title">real stories</p>
+              <p class="review pt-20">{{testimonials[index].reviewText}}</p>
+              <div class="image pt-15">
+                <img :src="`./assets/img/${testimonials[index].imageFile}`" alt="testimonial-picture">
+              </div>
+              <p class="author">{{testimonials[index].name}}</p>
+              <p class="role">/ {{testimonials[index].role}}</p>
+            </div>
+            <div class="picture col-lg-6">
+            </div>
+
+            <div class="slide-number">
+              <img src="./assets/img/image.png" alt="arrow-top"
+              @click="prev">
+              <p>{{testimonials[index].number}}/{{testimonials.length}}</p>
+              <img src="./assets/img/image_1.png" alt="arrow-bottom"
+              @click="next">
+            </div>
           </div>
+        </section>
+
+        <!-- SESTA SEZIONE -->
+        <section class="blog pt-110 pb-110 container">
+          <div class="row">
+            <p class="uppercase-title">blog updated</p>
+          </div>
+          <div class="blog-title row">
+            <h3>Interesting <span class="green-text">articles updated</span> daily</h3>
+          </div>
+          <div class="previews row pt-45">
+            <div class="col-lg-3"
+            v-for="article in articles">
+              <img :src="`./assets/img/${article.imageFile}`" alt="">
+              <div class="date pt-20"><i class="far fa-calendar"></i> {{article.date}}</div>
+              <p class="title pt-15">{{article.title}}</p>
+              <p class="text-preview">{{article.textPreview}}</p>
+            </div>
+          </div>
+          <div class="view-all row pt-30">
+            <div class="col-lg-12 text-center">
+              <p class="green-text text-uppercase"><a href="#">view all posts</a></p>
+              <div class="underline"></div>
+            </div>
+          </div>
+        </section>
 
       </main>
 
@@ -337,10 +331,11 @@
           </div>
 
         </div>
-
-        <div class="top-link">
-          <a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
-        </div>
+        <a href="#">
+          <div class="top-link">
+            <i class="fas fa-long-arrow-alt-up"></i>
+          </div>
+        </a>
       </footer>
     </div>
 

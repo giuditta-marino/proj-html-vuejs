@@ -239,12 +239,12 @@
 }
 
 .green-text {
-  color: #82ac20;
+  color: #20ac97;
 }
 
 .green-title {
   text-transform: uppercase;
-  color: #82ac20;
+  color: #20ac97;
   font-size: 0.7em;
 }
 
@@ -277,8 +277,8 @@
   box-sizing: border-box;
 }
 
-.container {
-  max-width: 1100px;
+html, body {
+  overflow-x: hidden;
 }
 
 body {
@@ -294,19 +294,34 @@ ul.no-style {
 }
 
 button {
-  background-color: #82ac20;
+  background-color: #20ac97;
   color: #ffffff;
   border-radius: 4px;
   padding: 15px 44px;
-  font-size: 0.7em;
+  font-size: 0.8em;
   font-weight: bold;
   border: 0;
+  outline: none;
+}
+@media all and (max-width: 1200px) {
+  button {
+    font-size: 0.9em;
+  }
+}
+
+@media all and (min-width: 1500px) {
+  .container {
+    max-width: 1350px;
+  }
 }
 
 header {
   background-image: url("../img/background-pattern-wavify.png");
   background-color: #fcf7fb;
   position: relative;
+}
+header .header-top nav {
+  padding: 0;
 }
 header .header-top nav .logo img {
   height: 20px;
@@ -318,13 +333,26 @@ header .header-top nav .logo img {
   }
 }
 header .header-top nav .menu-navigation {
-  padding-left: 36px;
-  padding-right: 36px;
+  font-size: 1.3em;
+}
+@media all and (min-width: 1500px) {
+  header .header-top nav .menu-navigation {
+    padding-left: 140px;
+    font-size: 1.8em;
+  }
 }
 header .header-top nav .menu-navigation ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media all and (max-width: 992px) {
+  header .header-top nav .menu-navigation ul {
+    padding-top: 15px;
+  }
+}
+header .header-top nav .menu-navigation ul li {
+  padding-right: 12px;
 }
 header .header-top nav .menu-navigation ul a {
   color: #3f3a64;
@@ -334,21 +362,22 @@ header .header-top nav .menu-navigation ul a {
 header .header-top nav .menu-navigation ul a i {
   font-size: 0.7em;
 }
-header .header-top nav .social-links ul {
+header .header-top nav .menu-navigation ul.social-links {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-@media all and (max-width: 768px) {
-  header .header-top nav .social-links ul {
+@media all and (max-width: 992px) {
+  header .header-top nav .menu-navigation ul.social-links {
     justify-content: center;
+    font-size: 1.5em;
   }
 }
-header .header-top nav .social-links ul li {
-  font-size: 1em;
+header .header-top nav .menu-navigation ul.social-links li {
+  font-size: 2em;
   padding-left: 20px;
 }
-header .header-top nav .social-links ul li a {
+header .header-top nav .menu-navigation ul.social-links li a {
   color: #3f3a64;
 }
 header .tools {
@@ -390,18 +419,23 @@ header .jumbo .peace-on-earth p.wingman span {
   bottom: 2px;
 }
 header .jumbo .peace-on-earth h1 {
-  font-size: 3.3em;
+  font-size: 1.8rem;
   line-height: 78px;
 }
-@media all and (min-width: 992px) and (max-width: 1082px) {
+@media all and (min-width: 768px) {
   header .jumbo .peace-on-earth h1 {
-    font-size: 3em;
+    font-size: 2.4rem;
   }
 }
 header .jumbo .peace-on-earth p.subtitle {
-  font-size: 1.2em;
+  font-size: 1.1em;
   color: #6b6c6c;
   line-height: 29px;
+}
+@media all and (min-width: 768px) {
+  header .jumbo .peace-on-earth p.subtitle {
+    font-size: 1.2em;
+  }
 }
 header .jumbo .peace-on-earth button i {
   padding-left: 5px;
@@ -410,16 +444,32 @@ header .jumbo .image {
   padding-left: 20px;
   position: relative;
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 470px) {
+  header .jumbo .image {
+    padding-left: 0;
+    margin-left: -30px;
+  }
+}
+@media all and (max-width: 992px) {
   header .jumbo .image {
     text-align: center;
     padding-top: 0;
   }
 }
+@media all and (min-width: 768px) and (max-width: 992px) {
+  header .jumbo .image {
+    padding-left: 130px;
+  }
+}
 header .jumbo .image img.motivation {
   position: relative;
   z-index: 1;
-  height: 612px;
+  height: 576px;
+}
+@media all and (min-width: 992px) {
+  header .jumbo .image img.motivation {
+    height: 612px;
+  }
 }
 header .jumbo .image img.shape {
   position: absolute;
@@ -443,7 +493,7 @@ main {
 main .goals .goals-number > * p.number {
   font-size: 2.1em;
   font-weight: 700;
-  color: #82ac20;
+  color: #20ac97;
 }
 main .goals .goals-number > * p.description {
   color: #171520;
@@ -465,6 +515,11 @@ main .about-me .alpha-male .description p:first-child {
 main .about-me .alpha-male .description p:last-child {
   font-size: 0.9em;
   color: #6b6c6c;
+}
+@media all and (min-width: 992px) {
+  main .about-me .alpha-video {
+    padding-bottom: 100px;
+  }
 }
 main .about-me .alpha-video .video-preview {
   position: relative;
@@ -599,12 +654,16 @@ main .book-store .logos {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 @media all and (max-width: 768px) {
   main .book-store .logos {
     padding-left: 80px;
     padding-right: 80px;
   }
+}
+main .book-store .logos .logo {
+  margin: 0 15px;
 }
 main .book-store .logos .logo img {
   filter: grayscale(100%);
@@ -629,16 +688,25 @@ main .reviews .row .testimonials {
   justify-content: center;
   background-image: url("../img/background-pattern-wavify.png");
   background-color: #fcf7fb;
-  padding: 0 168px;
+  padding: 0 50px;
+}
+@media all and (min-width: 576px) {
+  main .reviews .row .testimonials {
+    padding: 0 168px;
+  }
 }
 main .reviews .row .testimonials .uppercase-title {
   font-size: 0.7em;
   font-weight: 600;
 }
 main .reviews .row .testimonials .review {
-  font-size: 1.3em;
   font-weight: 600;
   color: #171520;
+}
+@media all and (min-width: 576px) {
+  main .reviews .row .testimonials .review {
+    font-size: 1.3em;
+  }
 }
 main .reviews .row .testimonials .author {
   padding-top: 17px;
@@ -708,10 +776,10 @@ main .blog .view-all {
   position: relative;
 }
 main .blog .view-all p a {
-  color: #82ac20;
+  color: #20ac97;
 }
 main .blog .view-all .underline {
-  border-top: 1px solid #82ac20;
+  border-top: 1px solid #20ac97;
   position: absolute;
   width: 114px;
   left: 50%;
@@ -758,15 +826,20 @@ footer .copyright {
 }
 footer .top-link {
   border-radius: 50%;
-  background-color: #82ac20;
-  padding: 15px 20px;
+  background-color: #20ac97;
+  padding: 20px 25px;
   position: absolute;
-  bottom: 31px;
+  bottom: 137px;
   right: 63px;
   display: flex;
   align-items: center;
 }
-footer .top-link a {
+@media all and (min-width: 576px) {
+  footer .top-link {
+    padding: 15px 20px;
+    bottom: 31px;
+  }
+}
+footer .top-link i {
   color: #ffffff;
-  line-height: 0;
 }

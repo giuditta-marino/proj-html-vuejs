@@ -1,5 +1,5 @@
-  .container{
-    max-width: 1100px;
+  html, body{
+    overflow-x: hidden;
   }
 
   body{
@@ -16,4 +16,13 @@
 
   button{
     @include button-style;
+    @media all and (max-width: $breakpoint-xl){
+      font-size: 0.9em;
+    }
+  }
+
+  .container{
+    @media all and (min-width: $breakpoint-xxl) {
+    max-width: 1350px;
+    }
   }
